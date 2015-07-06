@@ -6,6 +6,7 @@ import (
 
 	"github.com/astaxie/beego"
 	"os"
+	"github.com/astaxie/beego/plugins/cors"
 )
 
 func main() {
@@ -13,5 +14,13 @@ func main() {
 		beego.DirectoryIndex = true
 		beego.StaticDir["/swagger"] = "swagger"
 	}
+	beego.InsertFilter("*", beego.BeforeRouter,cors.Allow(&cors.Options{
+		AllowOrigins:     []string{"https://*"},
+		AllowMethods:     []string{"GET"},
+		AllowHeaders:     []string{"Origin"},
+		ExposeHeaders:    []string{"Content-Length", "Made-By"},
+		AllowCredentials: true,
+	}))
+
 	beego.Run(":"+os.Getenv("PORT"))
 }

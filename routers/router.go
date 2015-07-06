@@ -14,22 +14,5 @@ import (
 )
 
 func init() {
-	ns := beego.NewNamespace("/v1",
-		beego.NSNamespace("/get_link",
-			beego.NSInclude(
-				&controllers.GetLinkController{},
-			),
-		),
-//		beego.NSNamespace("/object",
-//			beego.NSInclude(
-//				&controllers.ObjectController{},
-//			),
-//		),
-//		beego.NSNamespace("/user",
-//			beego.NSInclude(
-//				&controllers.UserController{},
-//			),
-//		),
-	)
-	beego.AddNamespace(ns)
+	beego.Router("/link",&controllers.LinkController{},"get:Inspect")
 }

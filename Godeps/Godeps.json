@@ -11,6 +11,34 @@
 			"ImportPath": "github.com/bitly/go-simplejson",
 			"Comment": "v0.4.3-30-g18db6e6",
 			"Rev": "18db6e68d8fd9cbf2e8ebe4c81a78b96fd9bf05a"
+		},
+		{
+			"ImportPath": "github.com/djimenez/iconv-go",
+			"Rev": "5f6a5a4f0011195c0147545149ad54f4adb54757"
+		},
+		{
+			"ImportPath": "github.com/jfbus/httprs",
+			"Rev": "f56e9b916c7cd68a520a45d0e713e515896d17a0"
+		},
+		{
+			"ImportPath": "github.com/mikkyang/id3-go/encodedbytes",
+			"Rev": "59e3c3ddc696763f43a020498a64928d1e124672"
+		},
+		{
+			"ImportPath": "github.com/mikkyang/id3-go/v1",
+			"Rev": "59e3c3ddc696763f43a020498a64928d1e124672"
+		},
+		{
+			"ImportPath": "github.com/mikkyang/id3-go/v2",
+			"Rev": "59e3c3ddc696763f43a020498a64928d1e124672"
+		},
+		{
+			"ImportPath": "github.com/mitchellh/copystructure",
+			"Rev": "6fc66267e9da7d155a9d3bd489e00dad02666dc6"
+		},
+		{
+			"ImportPath": "github.com/mitchellh/reflectwalk",
+			"Rev": "eecf4c70c626c7cfbb95c90195bc34d386c74ac6"
 		}
 	]
 }
